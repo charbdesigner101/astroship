@@ -4,7 +4,17 @@ paths:
   collections: ''
   data: ''
   layouts:
-collections_config: {}
+collections_config:
+posts:
+    path: content/posts
+    output: true
+    url: /posts/{category|slugify}/[slug].html
+    icon: event_available
+  staff:
+    path: content/staff_members
+    parser: yaml
+    output: false
+    icon: people
 _inputs: {}
 _select_data: {}
 _structures: {}
